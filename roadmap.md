@@ -1,6 +1,6 @@
-- [ ] homeassistant integration
+- [x] homeassistant integration
 
-- [ ] make .exe have ico
+- [x] make .exe have ico
 
 - [ ] config hotkeys by using a json
 
