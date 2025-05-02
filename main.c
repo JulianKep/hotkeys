@@ -59,5 +59,11 @@ int main()
     return 0;
 }
 
-// compile using:
-// gcc main.c -o AAAhotkey -mwindows
+/*
+compile using:
+gcc main.c my.res -o AAAhotkey -mwindows
+
+compile icon:
+id ICON "path/to/my.ico"
+
+*/
