@@ -24,8 +24,6 @@ int main()
         return 1;
     }
 
-    printf("Hotkey registered. Press Ctrl+Alt+H...\n");
-
     MSG msg = {0};
     // gebe pointer von msg
     while (GetMessage(&msg, NULL, 0, 0))
