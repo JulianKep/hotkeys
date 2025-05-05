@@ -33,8 +33,12 @@ int main()
         {
             switch (msg.wParam)
             {
-                case 1: ShellExecute(NULL, "open", "http://homeassistant.local:8123/config/hardware", NULL, NULL, SW_SHOWNORMAL);
-                case 2: ShellExecute(NULL, "open", "notepad.exe", NULL, NULL, SW_SHOWNORMAL);
+                case 1:
+                    ShellExecute(NULL, "open", "http://homeassistant.local:8123/config/hardware", NULL, NULL, SW_SHOWNORMAL);
+                    break;
+                case 2:
+                    ShellExecute(NULL, "open", "notepad.exe", NULL, NULL, SW_SHOWNORMAL);
+                    break;
             }
         }
     }
