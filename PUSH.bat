@@ -18,6 +18,7 @@ echo %datetime_str%
 
 git add .
 git commit -m %datetime_str%
+git pull
 git push -u origin main
 
 pause
