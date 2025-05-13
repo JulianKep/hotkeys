@@ -1,0 +1,1 @@
+strg,alt,n,open,notepad.exe
