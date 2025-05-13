@@ -118,6 +118,19 @@ int main()
                 break;
             case 2:
                 ShellExecute(NULL, "open", "notepad.exe", NULL, NULL, SW_SHOWNORMAL);
+                ShellExecute(NULL, "open", "chrome.exe", "--new-window https://github.com/JulianKep?tab=repositories", NULL, SW_SHOWNORMAL);
+
+                Sleep(500);
+                HWND notepad_window = FindWindow(NULL, "Unbenannt - Editor");
+                if (notepad_window == NULL)
+                {
+                    MessageBox(NULL, "Window not found", "Error", MB_OK);
+                    return 1;
+                }
+
+                // position x, position y, size x, size y
+                MoveWindow(notepad_window, 2560, 0, 600, 600, TRUE);
+
                 break;
             case 3:
                 system("curl -X POST -H \"Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiI3ZDAwNGRiMWRjZTU0Yzg1YmIzM2JiMTFmZTkyMGM4YSIsImlhdCI6MTc0NjExNzI1MiwiZXhwIjoyMDYxNDc3MjUyfQ.K_OI7EAvliHJMx6TA_9FRudMzZkcxZQeRs523KROoH0\" http://homeassistant.local:8123/api/webhook/-6QDwsBUTH2duVkWPiaNwfdEh");

@@ -8,6 +8,6 @@
 
 - [ ] integrate calendar in programm
 
-- [ ] make it so it shows stuff in special pixelcoordiantes
+- [x] make it so it shows stuff in special pixelcoordiantes
 
-- [ ] when executing a shellexecute(start, notepad) in c can you make i t so the notepad appears in a certain location on the secdonscreen
+- [x] when executing a shellexecute(start, notepad) in c can you make i t so the notepad appears in a certain location on the secdonscreen
