@@ -60,16 +60,15 @@ int main()
     } while (!feof(file));
 
     fclose(file);
-    
-    
-    for (int i=0; i < combo_number; i++){
-        printf("%s, %s, %c, %s, %s\n", 
-            hotkeys[i].first_key,
-            hotkeys[i].second_key,
-            hotkeys[i].third_key,
-            hotkeys[i].command,
-            hotkeys[i].modifier
-        );
+
+    for (int i = 0; i < combo_number; i++)
+    {
+        printf("%s, %s, %c, %s, %s\n",
+               hotkeys[i].first_key,
+               hotkeys[i].second_key,
+               hotkeys[i].third_key,
+               hotkeys[i].command,
+               hotkeys[i].modifier);
     }
     getchar();
 
@@ -105,7 +104,7 @@ int main()
         return 1;
     }
 
-    MSG msg = {0}; 
+    MSG msg = {0};
     // gebe pointer von msg
     while (GetMessage(&msg, NULL, 0, 0))
     {
@@ -124,7 +123,7 @@ int main()
                 system("curl -X POST -H \"Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiI3ZDAwNGRiMWRjZTU0Yzg1YmIzM2JiMTFmZTkyMGM4YSIsImlhdCI6MTc0NjExNzI1MiwiZXhwIjoyMDYxNDc3MjUyfQ.K_OI7EAvliHJMx6TA_9FRudMzZkcxZQeRs523KROoH0\" http://homeassistant.local:8123/api/webhook/-6QDwsBUTH2duVkWPiaNwfdEh");
                 break;
             case 4:
-                ShellExecute(NULL, "open", "notepad.exe", NULL, NULL, SW_SHOWNORMAL);
+                ShellExecute(NULL, "open", "C:\\Users\\root\\Meine Ablage\\DOKUMENTE\\pass.txt", NULL, NULL, SW_SHOWNORMAL);
                 break;
             }
         }
