@@ -1,3 +1,5 @@
+## Roadmap
+
 - [x] homeassistant integration
 
 - [x] make .exe have ico
@@ -11,3 +13,10 @@
 - [x] make it so it shows stuff in special pixelcoordiantes
 
 - [x] when executing a shellexecute(start, notepad) in c can you make i t so the notepad appears in a certain location on the secdonscreen
+
+## Compile
+
+gcc main.c lib/cJSON.c my.res -o AAAhotkey -mwindows
+
+compile icon:
+id ICON "path/to/my.ico"
